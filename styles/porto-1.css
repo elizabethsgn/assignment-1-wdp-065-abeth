@@ -1,0 +1,201 @@
+.nav-item {
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 0px;
+  margin: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px 5px  rgba(215, 215, 215, 0.5);
+  height: auto;
+  max-width: 98%;
+}
+
+.display {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.display-header {
+  margin-top: 40px;
+  padding: 10px 0;
+  border: 3px solid snow;
+  background-color: white;
+}
+
+.display-header .grid-display {
+  display: grid;
+  grid-template-columns: 20% 25% 15% auto;
+}
+
+.display-header .grid-display .profil-display {
+  width: 100px;
+  background-color: white;
+  height: 150px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.display-header .grid-display .profil-display img {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+}
+
+.display-header .grid-display .data-display {
+  margin-top: 15px;
+  border-right: 3px solid lightgray;
+}
+
+.display-header .grid-display .data-display .nama-display {
+  color: black;
+  font-size: 25px;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+.display-header .grid-display .data-display .position-display {
+  color: gray;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.display-header .grid-display .data-display .display-button {
+  display: flex;
+  margin-top: 35px;
+}
+
+.display-header .grid-display .data-display .display-button .btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.display-header .grid-display .content-display {
+  margin: 15px 0px 10px 15px;
+}
+
+
+.display-header .grid-display .content-display .judul-display {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 14px;
+  padding-right: 3rem;
+}
+
+.display-header .grid-display .content-display .keterangan-display {
+  color: black;
+  font-weight: normal;
+  margin-bottom: 15px;
+  font-size: 14px;
+  padding-right: 3rem;
+}
+
+.form-isian {
+  margin-top: 20px;
+}
+
+.form-group {
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.form-group label, .form-group input {
+  display: block;
+}
+
+.form-group label {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.form-group input[type=text], input[type=number], input[type=email], select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.btn-form {
+  margin-top: 15px;
+  display: flex;
+  justify-content: end;
+}
+
+.form-isian .btn-form .btn {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-isian .btn-form .btn.btn-submit {
+  width: 15%;
+  background-color: #04AA6D;
+  color: white;
+  margin-right: 10px;
+}
+
+.form-isian .btn-form .btn.btn-reset {
+  width: 15%;
+  background-color: grey;
+  color: white;
+  margin-right: 10px;
+}
+
+.form-isian .btn-form .btn .btn-submit:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 750px) {
+  .display, .form-isian, .container {
+    width: 99%;
+    margin: auto;
+    display: block;
+  }
+  .display-header .grid-display {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+  .display-header .grid-display .profil-display {
+    width: 95%;
+    height: fit-content;
+  }
+
+}
